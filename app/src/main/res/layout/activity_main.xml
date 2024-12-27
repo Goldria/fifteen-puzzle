@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="-80dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Пятнашки"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/playerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:hint="Введите ваше имя"
+        android:inputType="text"
+        android:padding="16dp"
+        android:textColorHint="#888888"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <RadioGroup
+            android:id="@+id/fieldSizeGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/level_selection"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/size3x3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3×3"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/size4x4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="4×4"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/size5x5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5×5"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/startGameButton"
+                style="@style/ButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Начать игру" />
+
+            <Button
+                android:id="@+id/viewRecordsButton"
+                style="@style/ButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Таблица рекордов" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

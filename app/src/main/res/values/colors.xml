@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="main">#E4DEDC</color>
+    <color name="button">#D3CAC6</color>
+    <color name="button_hover">#BCB0AA</color>
+    <color name="stroke">#3E3E3E</color>
+    <color name="accent">#FFFAF7</color>
+    <color name="puzzle">#545454</color>
+</resources>
